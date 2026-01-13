@@ -2,7 +2,7 @@
 ![Python](https://img.shields.io/badge/Python-3.13-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
-
+![Python CI](https://github.com/aiham711127/nlp_arabic_fatiha/actions/workflows/main.yml/badge.svg)
 An advanced, modular Natural Language Processing (NLP) pipeline designed to analyze Quranic texts. This project demonstrates the transition from classical statistical methods to modern deep learning embeddings using **AraBERT**.
 
 

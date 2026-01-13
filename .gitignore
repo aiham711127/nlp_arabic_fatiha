@@ -12,7 +12,7 @@ build/
 # !models/**/.gitkeep
 
 # Jupyter
-.ipynb_checkpoints/
+#.ipynb_checkpoints/
 
 # Python compilation files
 __pycache__/
