@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  nlp-app:
+    build: .
+    container_name: nlp_fatiha_container
+    volumes:
+      # ربط مجلد النماذج في جهازك بمجلد النماذج داخل الحاوية
+      # لكي تظهر الملفات المحفوظة (models) عندك بعد انتهاء الحاوية
+      - ./models:/app/models
+      - ./data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1

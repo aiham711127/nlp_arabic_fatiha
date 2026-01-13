@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nlp_arabic_fatiha"
+version = "0.1.0"
+description = "A comprehensive NLP pipeline for Arabic text (Surat Al-Fatiha) using BOW, TF-IDF, Word2Vec, and BERT."
+authors = [
+  { name="Your Name", email="your.email@example.com" },
+]
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+
+[tool.black]
+line-length = 88
+target-version = ['py38']

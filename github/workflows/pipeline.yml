@@ -1,0 +1,36 @@
+name: NLP Fatiha CI/CD
+
+# متى يعمل هذا الأنبوب؟ عند كل Push أو Pull Request على فرع main
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest # يعمل على سيرفر لينكس افتراضي
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run Preprocessing Test
+      # هنا نختبر هل دالة التنظيف تعمل بشكل صحيح قبل قبول الكود
+      run: |
+        python -m pytest tests/test_preprocessing.py
+
+    - name: Build Docker Image (Optional CD Step)
+      # هذه الخطوة تبني الحاوية للتأكد أن Dockerfile سليم
+      run: |
+        docker build -t nlp-fatiha:latest .

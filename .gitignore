@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# نماذج
+# models/**/*
+# !models/**/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python compilation files
+__pycache__/
+*.py[cod]
+
+# Virtual Environment
+venv/
+env/
+
+# Environment Variables (IMPORTANT: Never commit secrets)
+.env
+
+# Large Data & Models (GitHub has a limit of 100MB)
+data/
+models/word2vec/
+models/embeddings/
+*.w2v
+*.npy
+
+# Editor settings
+.vscode/
+.idea/
