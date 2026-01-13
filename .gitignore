@@ -26,7 +26,7 @@ env/
 .env
 
 # Large Data & Models (GitHub has a limit of 100MB)
-data/
+#data/
 models/word2vec/
 models/embeddings/
 *.w2v

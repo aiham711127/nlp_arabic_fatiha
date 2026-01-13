@@ -39,24 +39,39 @@ State-of-the-Art: AraBERT (v02) for deep contextual embeddings, capturing the sp
 ### 🛠 Installation & Usage
 **Option 1**: Docker (Recommended)
 Ensure Docker is installed and run:
-
+```bash
 docker-compose up --build
+
+```
 
 **Option 2:** Local Setup
 1. Clone the Repo:
-
+```bash
 git clone [https://github.com/aiham711127/nlp_arabic_fatiha.git]
 
+```
+
 2. Setup Environment:
+```bash
 python -m venv venv
+
 source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+
 pip install -r requirements.txt
 
-3. Run Tests: 
+```
+
+3. Run Tests:
+```bash
 python -m pytest tests/
 
+``` 
+
 4. Execute Pipeline:
-python main.py
+```bash
+   python main.py
+
+```
 
 ### 🧪 Testing (CI/CD)
 This project uses Pytest for ensuring data integrity during preprocessing. The pipeline is ready for integration with GitHub Actions to automate testing on every push.
@@ -65,13 +80,16 @@ This project uses Pytest for ensuring data integrity during preprocessing. The p
 Aiham Albukaiti
 
 Machine Learning & NLP Enthusiast & Deep Learning
+```bash
+   https://github.com/aiham71112
 
-https://github.com/aiham711127
+   www.linkedin.com/in/aiham-albukhaiti-9165693a5
 
-www.linkedin.com/in/aiham-albukhaiti-9165693a5
+   
+```
+
 
 
 ### 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
 
